@@ -11,14 +11,13 @@ define(['ojs/ojcore','jquery'],
             * Parse information in JSON from the wikipedia API.
             * @returns {promise} - resolve on the following object
             *   {
-            *     hostname
-            *     ip
-            *     kernel_version
-            *     mem
-            *     os_version
-            *     platform_version
-            *     root_disk_size
-            *     uptime
+            *     parse {
+            *        title
+            *        pageid
+            *        text {
+            *          *
+            *       }
+            *     }
             *   }
             */
            wikipedia.prototype.wikipediaParse = function() {
