@@ -1,19 +1,35 @@
 <!--
- Copyright (c) 2014, 2017, Oracle and/or its affiliates.
- The Universal Permissive License (UPL), Version 1.0
+ Copyright (c) 2018, Johan Louwers. Licensed under GNU GENERAL PUBLIC LICENSE
  -->
 <div class="oj-hybrid-padding">
-  <h1>Dashboard Content Area</h1>
+  <h1>Example action=parse</h1>
+  <hr>
   <div>
-      To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
+      This page is using the parse action (action=parse) via the Wikipedia API to parse information from the Jimi Hendrix Wikipedia page.   Information retrieved via the API, in JSON format, include the title, pageid and (some) of the content. In our case we only return the content of a specfic section by leveraging the section=$ parameter from the wikipedia API. By changing the API parameters you can influence which section are returned as part fo the parse action.
+  </div>
+
+
+  <div>
+    </p>
+    The content is returned, in our case, as HTML code, Wikipedia uses relative URLs instead of absolute URLs which means that all links are now pointing to the server where the Javascript is being served from and it is not pointing to the wikipedia.com website. When using this is a real-life situation you do want to strip the links from the content or ensure they are pointing to the correct (wikipedia.com) domain to ensure they are working correctly.
+  </div>
+<hr>
+  <div>
+    </p>
+    <b>Wikipedia title : </b>
+    <span data-bind="text: wikiTitle"></span>
   </div>
 
   <div>
-  xxx yyyy <span>haha 123</span>
-    <span data-bind="text: wikiTitle"></span>
-  </p>
-  <span data-bind="text: wikiPageId"></span>
-</p>
-<span data-bind="html: wikiContent"></span>
+    </p>
+    <b>Wikipedia Pageid : </b>
+    <span data-bind="text: wikiPageId"></span>
   </div>
+
+  <div>
+    </p>
+    <b>Wikipedia content : </b>
+    <span data-bind="html: wikiContent"></span>
+  </div>
+
 </div>
