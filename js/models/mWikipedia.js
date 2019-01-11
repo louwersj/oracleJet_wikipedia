@@ -1,6 +1,5 @@
 /**
- * Copyright (c) 2017, 2018, Oracle and/or its affiliates.
- * Licensed under the Universal Permissive License v 1.0 as shown at http://oss.oracle.com/licenses/upl.
+ * Copyright (c) 2018, Johan Louwers. Licensed under GNU GENERAL PUBLIC LICENSE
  */
 define(['ojs/ojcore','jquery'],
        function(oj, $) {

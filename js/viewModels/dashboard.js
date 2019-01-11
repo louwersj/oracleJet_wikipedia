@@ -1,10 +1,7 @@
 /**
- * Copyright (c) 2014, 2017, Oracle and/or its affiliates.
- * The Universal Permissive License (UPL), Version 1.0
+ * Copyright (c) 2018, Johan Louwers. Licensed under GNU GENERAL PUBLIC LICENSE
  */
-/*
- * Your incidents ViewModel code goes here
- */
+ 
 define(['models/mWikipedia', 'ojs/ojcore', 'knockout', 'jquery'],
  function(wikipedia, oj, ko, $) {
 
